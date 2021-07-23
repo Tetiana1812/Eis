@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>Gllacy Shop</title>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="page">
+		<header class="header  main-header  main-header--closed">
+			<div class="main-header__wrapper">
+			<a href="/"><img class="logo" src="../image/logo.png" alt="logo" width="150px"></a>
+			<button class="main-header__toggle" type="button">Open</button>
+			<div class="main-header__menu--opened">
+				<nav class="main-menu">
+					<ul class="main-menu">
+							<li class="main-menu__item"><a href="/catalog">Catalog</a>
+								<div class="main-menu__submenu catalog">
+									<h1>Unser Angebot</h1>
+									<ul class="main-menu__submenu-items"> 
+										<li class="main-menu__submenu-item"><a href="/catalog">Sahnig</a></li>
+										<li class="main-menu__submenu-item"><a href="#">Sorbett</a></li>
+										<li class="main-menu__submenu-item"><a href="#">Fruchteis</a></li>
+										<li class="main-menu__submenu-item"><a href="#">Melorin</a></li>
+									</ul>
+								</div>
+							</li> 	
+						<li class="main-menu__item"><a href="#">Versand und Zahlung</a></li>
+						<li class="main-menu__item"><a href="#">Über uns</a></li>
+					</ul>
+				</nav>
+				<div class="button-head">
+					<div class="lupe">
+						<a href="#"></a>
+					</div>
+					<div class="enter">
+						<a class="login" href="#">Eintritt</a>	
+						<a class="eingelogged" href="#">Welcome</a>	
+						<div class="submenu modal-content"></div>
+					</div>
+					<div class="warenkorb">
+						<a class="card" href="#">leer</a>
+					</div>
+				</div>
+				<div class="header-welcome"></div>
+				<div class="header-contacts">
+				<p class="worktime-head">täglich von 10 bis 20</p>
+				<a class="tel-head" href="tel:88124502525">8 812 450-25-25</a>
+				</div>
+			</div>
+		</div>
+		</header>
+	<div class="catalog-container">
+		<h1 class="catalog-container__title">Eiscreme</h1>
+		<div class="catalog-container__filter  catalog-container--closed">
+			<h5 class="catalog-container__filter-title">Фильтр:</h5>
+			<div class="catalog-container__wrapper">
+				<div class="catalog-container__button"></div>
+			<div class="catalog-container__filter-items">
+				<div class="catalog-container__sort">
+					<h5 class="catalog-container__sort-title">Сортировка:</h5>
+					<div class="catalog-container__popular">
+						<ul class="catalog-container__items"><li class="catalog-container__item">по популярности
+							<div class="catalog-container__popular-submenu">
+								<ul class="catalog-container__popular-items">
+									<li class="catalog-container__popular-item">сначала недорогие</li>
+									<li class="catalog-container__popular-item">сначала дорогие</li>
+									<li class="catalog-container__popular-item">по жирности</li>
+								</ul>
+							</div>
+						</li>
+						</ul>
+					</div>
+			</div>
+			</div>
+			<div class="catalog-container__filter-price">
+				<h5 class="catalog-container__sort-title">Цена: 100 руб. – 500 руб.</h5>
+				 <div class="catalog-container__filter-interval">
+    				<input type="range" min="100" max="500" value="200" id="lower">
+					<input type="range" min="100" max="500" value="400" id="higher">
+					 <div class="catalog-container__filter-mobile">
+					<input type="number" min="100" max="500"> до <input type="number" min="100" max="500">
+				</div>
+ 				 </div> 
+				
+			</div>
+			<div class="catalog-container__filter-fat">
+				<h5 class="catalog-container__sort-title">Жирность:</h5>
+				<div class="filter-fat-items">
+					<input type="radio" id="btn-1" name="fat" checked>
+					<input type="radio" id="btn-2" name="fat">
+					<input type="radio" id="btn-3" name="fat">
+					<input type="radio" id="btn-4" name="fat">
+					<div class="fat-items">
+						<div class="slider-controls">
+							<label for="btn-1">0%</label>
+							<label for="btn-2">до 10%</label>
+							<label for="btn-3">до 30%</label>
+							<label for="btn-4">выше 30%</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-container__filler">
+				<h5 class="catalog-container__sort-title">Наполнители:</h5>
+				<div class="filler-block">
+					<div class="filler-items">
+						<input type="checkbox" name="filler" value="shoko" id="shoko">
+						<input type="checkbox" name="filler" value="shuger" id="shuger">
+						<input type="checkbox" name="filler" value="fruits" id="fruits">
+						<input type="checkbox" name="filler" value="syrops" id="syrops">
+						<input type="checkbox" name="filler" value="jem" id="jem">
+							<div class="filler-controls">
+						<label for="shoko"><span>шоколадные</span></label>
+						<label for="shuger"><span>сахарные присыпки</span></label>
+						<label for="fruits"><span>фрукты</span></label>
+						<label for="syrops"><span>сиропы</span></label>
+						<label for="jem"><span>джемы</span></label>
+							</div>
+					</div>
+					<button class="btn filler-button">Применить</button>
+				</div>
+			</div>
+		</div>
+		<div class="catalog__presentation">
+			<div class="hit-main">
+				<% product.slice(0,12).forEach( (el,i) => {  %>
+					<div class="hit-main__items">
+						<a href="/product/<%= el.id %>"><img class="ice" src="../image/<%= el.id %>.png" alt="hit1" width="267px"></a>
+						<p class="price"><%= el.price %><span class="ed">&#8364;</span>/kg</p>
+						<a href="#" class="description"><%= el.name %></a>
+						<a class="button button-hidden" href="#">Zum Warenkorb</a>
+						<p class="quantity--hidden">1</p>
+					</div>
+			<% }); %>
+			</div>
+			<div class="hit-main">
+				<% product.slice(12,24).forEach( (el,i) => {  %>
+					<div class="hit-main__items">
+						<a href="/product/<%= el.id %>"><img class="ice" src="../image/<%= el.id %>.png" alt="hit1" width="267px"></a>
+						<p class="price"><%= el.price %><span class="ed">&#8364;</span>/kg</p>
+						<a href="#" class="description"><%= el.name %></a>
+						<a class="button button-hidden" href="#">Zum Warenkorb</a>
+						<p class="quantity--hidden">1</p>
+					</div>
+			<% }); %>
+			</div>
+			<div class="hit-main">
+				<% product.slice(24,36).forEach( (el,i) => {  %>
+					<div class="hit-main__items">
+						<a href="/product/<%= el.id %>"><img class="ice" src="../image/<%= el.id %>.png" alt="hit1" width="267px"></a>
+						<p class="price"><%= el.price %><span class="ed">&#8364;</span>/kg</p>
+						<a href="#" class="description"><%= el.name %></a>
+						<a class="button button-hidden" href="#">Zum Warenkorb</a>
+						<p class="quantity--hidden">1</p>
+					</div>
+			<% }); %>
+			</div>
+		<span class="catalog__navigation">
+			<button class="catalog__button"></button>
+			<button class="catalog__button"></button>
+			<button class="catalog__button"></button>
+		</span>
+		</div>
+		</div>
+	</div>
+	<footer>
+		<div class="social-button">
+			<a class="social social-tw" href="#"></a>
+			<a class="social social-inst" href="#"></a>
+			<a class="social social-fb" href="#"></a>
+			<a class="social social-vk" href="#"></a>
+		</div>
+		<div class="footer-information">
+			<div class="footer-items1">
+				<a class="footer-information__hart" href="#"><b>Für Lieferanten</b></a>
+				<a href="#">Über die Produktion</a>
+			</div>
+			<div class="footer-items2">
+				<a href="#">Unsere Dokumente</a>
+				<a href="#">Ökostandards</a>
+			</div>
+		</div>
+		<div class="footer-logo">
+			<a href="#" class="footer-logo__img"><img src="image/footer-logo.png" alt="company"></a>
+			<a href="#">Erstellt von HTML Academy &copy; 2016</a>
+		</div>
+	</footer>
+	<div class="submenu modal-content">
+							
+	</div>
+	<div class="submenu submenu-card">
+
+	</div>
+	<div class="submenu submenu-form">
+					<form action="#" method="post">
+						<input class="lupe-form submenu-text" type="text" placeholder="Что ищем?">
+					</form>
+	</div>
+	<div class="catalog__zeigehits">
+
+	</div>
+	<script src="../js/popup.js"></script>
+</div>
+</body>
+</html>
+
