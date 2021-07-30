@@ -1,0 +1,22 @@
+/* LESS Document */
+@import "variables.less";
+@import "mixins.less";
+
+.catalog__navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.catalog__button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    .no-outline();
+    background-color: transparent;
+    border: 2px solid #c1cec7;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.catalog__button--active {
+    background-color: #c1cec7;
+}

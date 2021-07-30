@@ -1,0 +1,32 @@
+/* LESS Document */
+.container () {
+	width: 81%;
+	margin: 0 auto;
+	@media @desktop-widths {
+		width: 1146px;
+	}
+}
+.no-outline {
+	outline: none;
+	background-color: transparent;
+	border: none;
+}
+
+.font (@size; @height; @weight: normal) {
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+.submenu {
+	background-color: #f8f7f4;
+	border-radius: 10px;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+@mobile-widths-only: ~"(max-width: 767px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 768px)";
+
+.block {
+	padding: 0;
+	margin: 0;
+}

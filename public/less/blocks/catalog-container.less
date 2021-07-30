@@ -1,0 +1,21 @@
+/* LESS Document */
+@import "variables.less";
+@import "mixins.less";
+
+.catalog-container {
+	.container();
+}
+
+.catalog-container__title {
+	.block();
+	.font(25px; 25px; bold);
+	font-family: 'Roboto', sans-serif;
+}
+
+@media @desktop-widths {
+	.catalog-container__title {
+		.block();
+		.font(35px; 35px; bold);
+		font-family: 'Roboto', sans-serif;
+	}
+}

@@ -1,0 +1,303 @@
+/* LESS Document */
+@import "variables.less";
+@import "mixins.less";
+
+.main-content {
+	.container();
+	margin-bottom: 10px;
+}
+.main-content__title {
+	.font(18px; 24px; bold);
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 115px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.button-main {
+	width: 55%;
+	margin: 0 auto;
+	.font(16px; 24px; bold);
+	padding: 10px 0;
+}
+.button-main span {
+	text-align: center;
+	padding: 0;
+}
+.slider {
+	padding: 0;
+	position: relative;
+	border: thin solid transparent;
+	margin-top: 15px;
+}
+.slider-promo {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	left: 98px;
+}
+.slider-controls {
+	margin: auto 0;
+	padding: 0;
+}
+.banner-area--nonactive {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid white;
+	margin-right: 8px;
+}
+
+.banner-area--active {
+	background-color: white;
+}
+
+.banner {
+	width: 100%;
+	height: 420px;
+	margin: 0;
+	margin-top: 40px;
+	overflow: hidden;
+	
+}
+.slider-slides {
+	width: 100%;
+	height: 300%;
+}
+.banner-area-left, .banner-area-right {
+	float: left;
+	margin: 0px;
+	margin-bottom: 25px;
+
+}
+
+.banner-1 {
+	background: url("../image/raspberries.png") no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-2 {
+	background: url("../image/shoko.png")no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-3 {
+
+	background: url("../image/erdberry.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+
+}
+.banner-4 {
+
+	background: url("../image/orange.jpg")no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-5 {
+
+	background: url("../image/blueberry.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-6 {
+
+	background: url("../image/leim.jpg")no-repeat 0 0;
+	background-size: cover;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-area-left h2, .banner-area-right h2 {
+	font-size: 18px; 
+	font-weight: bold;
+	margin: 0 auto 15px auto;
+	padding-top: 0;	
+	text-shadow: 1px 1px 1px black;
+}
+.banner-area-left p, .banner-area-right p {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 0; 
+	padding: 0;
+	text-shadow: 1px 1px 1px black;
+}
+.banner-button {
+	width: 45%;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	margin-left: auto;
+	padding: 10px 20px;
+	text-align: center;
+}
+.banner-button span {
+	margin: 0 auto;
+	padding: 0;
+}
+
+@media @desktop-widths {
+.main-content {
+	.container();
+	margin-bottom: 40px;
+}
+.main-content__title {
+	.font(60px; 60px; bold);
+	width: 675px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 280px;
+	margin-bottom: 40px;
+}
+.button-main {
+	width: 295px;
+	margin: 0 auto;
+	font-size: 31px;
+	font-weight: bold;
+	padding: 15px;
+}
+.slider {
+	padding: 0;
+	position: relative;
+	margin-top: 0;
+}
+.slider-promo {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	position: absolute;
+	top: -35px;
+	left: 0;
+}
+.slider-controls {
+	margin: auto 0;
+	padding: 0;
+}
+
+.banner-area--nonactive {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid white;
+	margin-right: 8px;
+}
+
+.banner-area--active {
+	background-color: white;
+}
+
+.banner {
+	width: 100%;
+	margin: 0;
+	margin-top: 40px;
+	overflow: hidden;
+	height: auto;
+}
+.slider-slides {
+	/*width: 300%;*/
+	height: auto;
+}
+.banner-area-left {
+	float: left;
+	margin: 0px;
+	margin-right: 24px;
+
+}
+.banner-area-right {
+	float: left;
+	margin: 0px;
+	margin-right: 0;
+}
+.banner-1 {
+	background: url("../image/raspberries.png")no-repeat;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-2 {
+	background: url("../image/shoko.png")no-repeat;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-3 {
+
+	background: url("../image/erdberry.jpg") no-repeat;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+
+}
+.banner-4 {
+
+	background: url("../image/orange.jpg")no-repeat;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-5 {
+
+	background: url("../image/blueberry.jpg") no-repeat;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-6 {
+
+	background: url("../image/leim.jpg")no-repeat 0 0;
+	background-size: cover;
+	width: 520px;
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+.banner-area-left h2, .banner-area-right h2 {
+	font-size: 35px; 
+	font-weight: bold;
+	margin: 0 auto 20px auto;
+	padding-top: 0;	
+	text-shadow: 1px 1px 1px black;
+}
+.banner-area-left p, .banner-area-right p {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0; 
+	padding: 0;
+	text-shadow: 1px 1px 1px black;
+}
+.banner-button {
+	width: 170px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 8px;
+	margin-left: auto;
+	padding: 14px 20px;
+	text-align: center;
+}
+.banner-button span {
+	margin: 0 auto;
+	padding: 0;
+}
+}

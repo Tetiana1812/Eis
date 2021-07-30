@@ -1,0 +1,149 @@
+/* LESS Document */
+@import "variables.less";
+@import "mixins.less";
+
+.contacts {
+	.container();
+}
+.contacts-items {
+	background-color: #fefefe;
+	border-radius: 15px;
+	color: #343434;
+	padding: 30px 25px;
+}
+.contacts-items h5 {
+	padding: 0;
+	margin-top: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.contacts-items p {
+	margin-top: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.contacts-items .map {
+	color: #343434;
+	display: block;
+	position: relative;
+	margin-bottom: 18px;
+	.font(14px; 14px);
+	cursor: pointer;
+}
+.map::after {
+	content: "";
+	background-color: #343434;
+	width: 140px;
+	height: 0.5px;
+	margin-top: 2px;
+	opacity: 0.7;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.map:hover::after {
+	background-color: #343434;
+}
+.tel {
+	margin-top: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.contacts-button {
+	width: 70%;
+	margin: 25px auto 0;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+@media @desktop-widths {
+	.contacts {
+		background: url("../image/map.jpg") no-repeat;
+		background-size: 100% auto;
+		min-height: 430px;
+		margin: 0; 
+		display: flex;
+		padding: 30px 0;
+		width: 100%;
+	}
+
+	.contacts__wrapper {
+		.container();
+		font-size: 0;
+	}
+	.contacts-items {
+		width: 305px;
+		min-height: 305px;
+		background-color: #fefefe;
+		border-radius: 15px;
+		margin-left: auto;
+		margin-top: 30px;
+		color: #343434;
+		padding: 32px 25px 0 25px;
+	}
+	.contacts-items h5 {
+		padding: 0;
+		margin-top: 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.contacts-items p {
+		margin-top: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	.contacts-items .map {
+		color: #343434;
+		display: block;
+		position: relative;
+		margin-bottom: 18px;
+		.font(14px; 14px);
+		cursor: pointer;
+	}
+	.map::after {
+		content: "";
+		background-color: #343434;
+		width: 140px;
+		height: 0.5px;
+		margin-top: 2px;
+		opacity: 0.7;
+		position: absolute;
+		top: 15px;
+		left: 0;
+	}
+	.map:hover::after {
+		background-color: #343434;
+	}
+	.tel {
+		margin-top: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+	.contacts-button {
+		width: 192px;
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 15px 35px;
+	}
+}
