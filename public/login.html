@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="modal-content">
+    <form class="login-form" action="/login" method="POST">
+        <input class="submenu-text area-post" id="name" type="text" name="userName" placeholder="Wie heißen Sie" required>
+        <input class="submenu-text area-post" id="login" type="email" name="email" placeholder="Email" required>
+        <input class="submenu-text area-passwort" id="password" type="password" name="password" placeholder="Passwort" required>
+        <div  class="show-password">
+            <input class="show-password-in" type="checkbox"><label>Passwort zeigen</label>
+        </div>
+        <input class="button button-enter" type="submit" value="Eintretten">
+        <div class="zusatz">
+            <a class="button-text forgot" href="#">Passwort vergessen?</a>
+            <a class="button-text registry" href="#">Neue Anmeldung</a>	
+        </div>
+    </form>				
+</div>
+
+    
+</body>
+</html>
